@@ -4,13 +4,19 @@ var cryptosquareFunction = function(string) {
   //make an array of the string
   var letters = string.split("");
   var squareRootOfLetters = Math.ceil(Math.sqrt(letters.length));
-  console.log(squareRootOfLetters);
-  //figure out# of rows based on the # of the letters in the string.
   //slice(start, column.length)
-//for()
-    var row = letters.splice(0, squareRootOfLetters);
-    console.log(row);
-    console.log(letters);
+  var row = []
+  var rowArray = []
+  //var position = []
+  for(var i = 0; i < squareRootOfLetters; i++) {
+    row = letters.splice(0, squareRootOfLetters);
+    rowArray.push(row);
+  }
+  for(var r = 0; r <= row.length; r++) {
+    //position = row.shift();
+  }
+  console.log(rowArray);
+  //console.log(position);
 }
 
 $(document).ready(function() {
