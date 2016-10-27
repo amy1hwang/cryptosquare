@@ -6,12 +6,11 @@ var cryptosquareFunction = function(string) {
   var squareRootOfLetters = Math.ceil(Math.sqrt(letters.length));
   console.log(squareRootOfLetters);
   //figure out# of rows based on the # of the letters in the string.
-  var firstRow = letters.slice(0, squareRootOfLetters);
-  console.log(firstRow);
-  // for(var i = 0, i = squareRootOfLetters, i++) {
-  //
-  // }
-  // //slice(start, column.length)
+  //slice(start, column.length)
+//for()
+    var row = letters.splice(0, squareRootOfLetters);
+    console.log(row);
+    console.log(letters);
 }
 
 $(document).ready(function() {
